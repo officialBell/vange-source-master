@@ -2,7 +2,7 @@
 
 #define MAX_TICKS 16
 
-#include "main.h"
+#include "../main.h"
 
 #include <array>
 
@@ -38,7 +38,7 @@ extern backtrackData backtrackInfo[64][MAX_TICKS];
 
 
 /*#pragma once
-#include "main.h"
+#include "../main.h"
 
 struct lbyRecords
 {

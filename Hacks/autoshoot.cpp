@@ -43,7 +43,7 @@ void AutoShoot(C_BaseEntity* player, C_BaseCombatWeapon* activeWeapon, CUserCmd*
         float playerDistance = player->GetVecOrigin().DistTo ( player->GetVecOrigin() );
         
         Vector zeus_point;
-        zeus_point = GetHitboxPosition(player, (int)HITBOX_BODY);
+        zeus_point = GetHitboxPosition(player, (int)HITBOX_BELLY);
         if ( playerDistance <= 184.f )
         {
             //cmd->buttons &= ~IN_ATTACK;

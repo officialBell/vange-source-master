@@ -1,5 +1,5 @@
 #include "cfg.h"
-#include "skinchanger.h"
+#include "../Hacks/skinchanger.h"
 
 class Config
 {

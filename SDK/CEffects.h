@@ -2,7 +2,6 @@
 
 #define MAX_DLIGHTS 32
 
-//#include "QAngle.h"
 #include "Vector.h"
 
 enum

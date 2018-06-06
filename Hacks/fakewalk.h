@@ -7,6 +7,6 @@
 //
 #pragma once
 
-#include "main.h"
+#include "../main.h"
 
 void Fakewalk(CUserCmd* cmd, C_BaseEntity* local);

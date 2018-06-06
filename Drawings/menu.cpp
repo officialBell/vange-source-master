@@ -4,7 +4,7 @@
 //
 
 #include "menu.h"
-#include "Config.h"
+#include "../Variables/Config.h"
 
 cMenu* menu = new cMenu();
 Config cfg;

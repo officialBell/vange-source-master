@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 void AngleVectors(const Vector & angles, Vector * forward)
 {

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 #include "../Drawings/menu.h"
 #include "../Hacks/crosshair.h"
 #include "../Hacks/esp.h"

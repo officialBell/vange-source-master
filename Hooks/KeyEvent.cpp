@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 int hkKeyEvent(void* thisptr, int eventcode, int keynum, const char* currentbinding)
 {

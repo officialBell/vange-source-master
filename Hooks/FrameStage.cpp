@@ -1,7 +1,7 @@
-#include "main.h"
-#include "skinchanger.h"
-#include "asuswalls.h"
-#include "LagComp.h"
+#include "../main.h"
+#include "../Hacks/skinchanger.h"
+#include "../Hacks/asuswalls.h"
+#include "../Hacks/LagComp.h"
 
 void RemoveFlash(ClientFrameStage_t stage)
 {

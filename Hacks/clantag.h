@@ -1,6 +1,6 @@
 #pragma once
 
-#include "main.h"
+#include "../main.h"
 
 void gamesense();
 void vangeme();

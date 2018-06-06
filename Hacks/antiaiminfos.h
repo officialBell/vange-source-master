@@ -1,7 +1,7 @@
-#include "hooks.h"
-#include "esp.h"
-#include "main.h"
-#include "antiaim.h"
+#include "../Interfaces/hooks.h"
+#include "../Hacks/esp.h"
+#include "../main.h"
+#include "../Hacks/antiaim.h"
 
 /*
 namespace AntiAimInfos

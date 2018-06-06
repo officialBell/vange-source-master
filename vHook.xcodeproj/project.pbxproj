@@ -59,7 +59,6 @@
 		B67AE8381F91B0D800ADDCD8 /* hooks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B67AE8331F91B0D800ADDCD8 /* hooks.cpp */; };
 		B67AE8391F91B0D800ADDCD8 /* interfaces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B67AE8341F91B0D800ADDCD8 /* interfaces.cpp */; };
 		B67AE83A1F91B0D800ADDCD8 /* interfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = B67AE8351F91B0D800ADDCD8 /* interfaces.h */; };
-		B67AE83B1F91B0D800ADDCD8 /* Info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B67AE8361F91B0D800ADDCD8 /* Info.cpp */; };
 		B67AE83C1F91B0D800ADDCD8 /* hooks.h in Headers */ = {isa = PBXBuildFile; fileRef = B67AE8371F91B0D800ADDCD8 /* hooks.h */; };
 		B67AE83E1F91B1E600ADDCD8 /* hacks.h in Headers */ = {isa = PBXBuildFile; fileRef = B67AE83D1F91B1E600ADDCD8 /* hacks.h */; };
 		B67AE8411F91B1F100ADDCD8 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B67AE83F1F91B1F100ADDCD8 /* utils.cpp */; };
@@ -158,7 +157,6 @@
 		B67AE8331F91B0D800ADDCD8 /* hooks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hooks.cpp; path = Interfaces/hooks.cpp; sourceTree = "<group>"; };
 		B67AE8341F91B0D800ADDCD8 /* interfaces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = interfaces.cpp; path = Interfaces/interfaces.cpp; sourceTree = "<group>"; };
 		B67AE8351F91B0D800ADDCD8 /* interfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = interfaces.h; path = Interfaces/interfaces.h; sourceTree = "<group>"; };
-		B67AE8361F91B0D800ADDCD8 /* Info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Info.cpp; path = Interfaces/Info.cpp; sourceTree = "<group>"; };
 		B67AE8371F91B0D800ADDCD8 /* hooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hooks.h; path = Interfaces/hooks.h; sourceTree = "<group>"; };
 		B67AE83D1F91B1E600ADDCD8 /* hacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hacks.h; path = Hacks/hacks.h; sourceTree = "<group>"; };
 		B67AE83F1F91B1F100ADDCD8 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utils.cpp; path = Utils/utils.cpp; sourceTree = "<group>"; };
@@ -397,7 +395,6 @@
 			children = (
 				E1FE19D81E718F230018D409 /* main.cpp */,
 				E1FE19D91E718F230018D409 /* main.h */,
-				B67AE8361F91B0D800ADDCD8 /* Info.cpp */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -565,7 +562,6 @@
 				8F4E12E1200FBCDF000F17A0 /* skinchanger.cpp in Sources */,
 				9ADC15EC1F8F77F600BBF4A7 /* esp.cpp in Sources */,
 				B6A954681FACAC0900351006 /* prediction.cpp in Sources */,
-				B67AE83B1F91B0D800ADDCD8 /* Info.cpp in Sources */,
 				14D91C001F99B58F00252244 /* crosshair.cpp in Sources */,
 				B67AE8391F91B0D800ADDCD8 /* interfaces.cpp in Sources */,
 				9ADC15F01F8F7AFE00BBF4A7 /* spammer.cpp in Sources */,

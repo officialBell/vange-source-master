@@ -19,12 +19,11 @@ int MakeHitscan(C_BaseEntity* entity)
         // high
         hitboxes.push_back(HITBOX_HEAD);
         hitboxes.push_back(HITBOX_NECK);
-        hitboxes.push_back(HITBOX_LOWER_NECK);
         hitboxes.push_back(HITBOX_PELVIS);
-        hitboxes.push_back(HITBOX_BODY);
+        hitboxes.push_back(HITBOX_BELLY);
         hitboxes.push_back(HITBOX_THORAX);
-        hitboxes.push_back(HITBOX_CHEST);
         hitboxes.push_back(HITBOX_UPPER_CHEST);
+        hitboxes.push_back(HITBOX_LOWER_CHEST);
         hitboxes.push_back(HITBOX_RIGHT_THIGH);
         hitboxes.push_back(HITBOX_LEFT_THIGH);
         hitboxes.push_back(HITBOX_RIGHT_CALF);
@@ -37,7 +36,6 @@ int MakeHitscan(C_BaseEntity* entity)
         hitboxes.push_back(HITBOX_RIGHT_FOREARM);
         hitboxes.push_back(HITBOX_LEFT_UPPER_ARM);
         hitboxes.push_back(HITBOX_LEFT_FOREARM);
-        hitboxes.push_back(HITBOX_MAX);
     }
     
     if(vars.aimbot.hitscantype == 2)
@@ -45,8 +43,8 @@ int MakeHitscan(C_BaseEntity* entity)
         hitboxes.push_back(HITBOX_HEAD);
         hitboxes.push_back(HITBOX_NECK);
         hitboxes.push_back(HITBOX_UPPER_CHEST);
-        hitboxes.push_back(HITBOX_CHEST);
-        hitboxes.push_back(HITBOX_BODY);
+        hitboxes.push_back(HITBOX_LOWER_CHEST);
+        hitboxes.push_back(HITBOX_BELLY);
         hitboxes.push_back(HITBOX_PELVIS);
         hitboxes.push_back(HITBOX_RIGHT_UPPER_ARM);
         hitboxes.push_back(HITBOX_LEFT_UPPER_ARM);
@@ -59,18 +57,18 @@ int MakeHitscan(C_BaseEntity* entity)
         hitboxes.push_back(HITBOX_HEAD);
         hitboxes.push_back(HITBOX_NECK);
         hitboxes.push_back(HITBOX_UPPER_CHEST);
-        hitboxes.push_back(HITBOX_CHEST);
-        hitboxes.push_back(HITBOX_BODY);
+        hitboxes.push_back(HITBOX_LOWER_CHEST);
+        hitboxes.push_back(HITBOX_BELLY);
         hitboxes.push_back(HITBOX_PELVIS);
     }
     
     if(vars.aimbot.hitscantype == 4)
     {
         hitboxes.push_back(HITBOX_PELVIS);
-        hitboxes.push_back(HITBOX_BODY);
+        hitboxes.push_back(HITBOX_BELLY);
         hitboxes.push_back(HITBOX_THORAX);
-        hitboxes.push_back(HITBOX_CHEST);
         hitboxes.push_back(HITBOX_UPPER_CHEST);
+        hitboxes.push_back(HITBOX_LOWER_CHEST);
         hitboxes.push_back(HITBOX_RIGHT_THIGH);
         hitboxes.push_back(HITBOX_LEFT_THIGH);
         hitboxes.push_back(HITBOX_RIGHT_CALF);
@@ -219,12 +217,6 @@ void DoAim(CUserCmd* pCmd, C_BaseEntity* local, C_BaseCombatWeapon* weapon, floa
                     pCmd->buttons |= IN_ATTACK2;
                 }
                 
-                if(vars.aimbot.autocrouch)
-                {
-                    pCmd->buttons |= IN_DUCK;
-                }
-                
-                
                 bool bAttack = true;
                 
                 if (weapon->GetNextPrimaryAttack() - pGlobals->interval_per_tick > local->GetTickBase() * pGlobals->interval_per_tick)
@@ -251,16 +243,3 @@ void DoAim(CUserCmd* pCmd, C_BaseEntity* local, C_BaseCombatWeapon* weapon, floa
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

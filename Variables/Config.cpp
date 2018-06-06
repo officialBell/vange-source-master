@@ -222,7 +222,7 @@ void Config::SaveConfig() {
     
     
     //Colours
-    /*
+    
     cfg.SetDoubleValue("Colors", "pChamr", GetFloatValue(vars.colors.pchamr));
     cfg.SetDoubleValue("Colors", "pChamg", GetFloatValue(vars.colors.pchamg));
     cfg.SetDoubleValue("Colors", "pChamb", GetFloatValue(vars.colors.pchamb));
@@ -238,7 +238,7 @@ void Config::SaveConfig() {
     cfg.SetDoubleValue("Colors", "bignr", GetFloatValue(vars.colors.bignr));
     cfg.SetDoubleValue("Colors", "bigng", GetFloatValue(vars.colors.bigng));
     cfg.SetDoubleValue("Colors", "bignb", GetFloatValue(vars.colors.bignb));
-     */
+    */
     
     // AA
     cfg.SetBoolValue("Misc", "Thirdperson", GetBoolValue(vars.misc.thirdpersonmode));

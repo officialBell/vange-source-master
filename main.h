@@ -30,9 +30,8 @@
 #include <cstdio>
 
 using namespace std;
-
-#include "offsets.h"    // OFFSET 
-
+/* SDK */
+#include "SDK/offsets.h"
 #include "SDK/CEffects.h"
 #include "SDK/AnimLayer.h"
 #include "SDK/CBaseAnimating.h"
@@ -65,18 +64,22 @@ using namespace std;
 #include "SDK/INetChannelInfo.h"
 #include "SDK/GameEvent.h"
 
-#include "netvarmanager.h"
-#include "bvars.h"
-#include "interfaces.h"
-#include "drawings.h"
+/* Variables */
+#include "Variables/bvars.h"
+
+/* Interfaces */
+#include "Interfaces/interfaces.h"
+#include "Interfaces/hooks.h"
+
+/* Drawings */
+#include "Drawings/drawings.h"
 
 /* Utilities */
-#include "utils.h"
-#include "patternscan.h"
+#include "Utils/utils.h"
+#include "Utils/patternscan.h"
+#include "Utils/netvarmanager.h"
 
 /* Hacks */
-#include "hacks.h"
-#include "hooks.h"
-
+#include "Hacks/hacks.h"
 
 #endif /* main_hpp */

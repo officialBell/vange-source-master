@@ -1,7 +1,7 @@
 #ifndef EnginePrediction_h
 #define EnginePrediction_h
 
-#include "main.h"
+#include "../main.h"
 
 extern float m_flOldCurtime;
 extern float m_flOldFrametime;

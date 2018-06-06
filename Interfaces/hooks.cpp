@@ -1,5 +1,5 @@
-#include "main.h"
-#include "skinchanger.h"
+#include "../main.h"
+#include "../Hacks/skinchanger.h"
 
 bool* bSendPacket = nullptr;
 

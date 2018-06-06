@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 void hkOverrideView(void* thisptr, CViewSetup& setup) 
 {

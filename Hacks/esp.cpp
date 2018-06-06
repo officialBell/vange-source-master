@@ -1,5 +1,4 @@
-#include "main.h"
-
+#include "../main.h"
 #include "esp.h"
 #include "../Hacks/autowall.h"
 #include "hitmarker.h"

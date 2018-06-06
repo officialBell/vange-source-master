@@ -1,4 +1,4 @@
-#include "main.h"
+#include "../main.h"
 
 void hkRunCommand(void* thisptr, C_BaseEntity* pLocal, CUserCmd* pCmd, void* pHelper)
 {

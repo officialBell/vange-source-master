@@ -4,7 +4,7 @@
 //
 
 #include "antiaim.h"
-#include "INetChannelInfo.h"
+#include "../SDK/INetChannelInfo.h"
 
 Vector atTargets;
 
