@@ -6,7 +6,6 @@
 #include "../Hacks/clantag.h"
 #include "../Hacks/spammer.h"
 #include "../Hacks/fakewalk.h"
-#include "../Hacks/LagComp.h"
 
 Vector tpangles;
 

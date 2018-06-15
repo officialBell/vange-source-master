@@ -564,34 +564,29 @@ inline Vector operator*(float fl, const Vector& v)
     return v * fl;
 }
 
-inline vec_t Vector::Length2D(void) const {
+inline float Vector::Length2D(void) const
+{
     CHECK_VALID(*this);
-    
+
     float root = 0.0f;
-    
+
     float sqst = x*x + y*y;
-    
-    __asm
-    {
-        sqrtss xmm0, sqst
-        movss root, xmm0
-    }
-    
+
+    root = sqrt(sqst);
+
     return root;
 }
 
-inline vec_t Vector::Length(void) const {
+inline float Vector::Length(void) const
+{
     CHECK_VALID(*this);
-    
+
     float root = 0.0f;
-    
+
     float sqsr = x*x + y*y + z*z;
-    
-    __asm {
-        sqrtss xmm0, sqsr
-        movss root, xmm0
-    }
-    
+
+    root = sqrt(sqsr);
+
     return root;
 }
 

@@ -9,21 +9,11 @@ namespace Global
 
 int __attribute__((constructor)) Init()
 {
-    
-    InitializeInterfaces();
-    
+    InitializeInterfaces();    
     InitializeVMTs();
-    
     InitializeHooks();
-    
-    NetVarManager::DumpNetvars();
-    
     Offsets::getOffsets();
-    
-    UpdateResolver();
-    
     PrintInfo();
-    
     return 0;
 }
 

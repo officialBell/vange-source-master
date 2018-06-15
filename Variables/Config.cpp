@@ -17,9 +17,7 @@ const char* ConfigName;
 string user     = getenv("USER");
 string dsk      = "/Users/" + user + "/Desktop/";
 string fdr      = "/Users/" + user + "/Desktop/vange.me";
-string hvh    = "/Users/" + user + "/Desktop/vange.me/hvh.ini";
-//string hvh2    = "/Users/" + user + "/Desktop/vange.me/hvh2.ini";
-//string hvh3    = "/Users/" + user + "/Desktop/vange.me/hvh3.ini";
+string hvh      = "/Users/" + user + "/Desktop/vange.me/hvh.ini";
 string skins    = "/Users/" + user + "/Desktop/vange.me/skins.ini";
 
 bool GetBoolValue(bool Value)

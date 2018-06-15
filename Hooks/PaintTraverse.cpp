@@ -3,8 +3,6 @@
 #include "../Hacks/crosshair.h"
 #include "../Hacks/esp.h"
 #include "../Hacks/spectators.h"
-#include "../Hacks/antiaiminfos.h"
-#include "../Hacks/hitmarker.h"
 
 void hkPaintTraverse(void* thisptr, VPANEL panel, bool forceRepaint, bool allowForce)
 {

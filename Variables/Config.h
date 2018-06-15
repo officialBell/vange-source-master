@@ -7,7 +7,7 @@ public:
     
     template<typename type>
     type GetSetting(const char* section, const char* key, bool menu = false) {
-        type value = NULL;
+        type value = 0.0;
         
         if (typeid(type) == typeid(float))
             value = (float)cfg.GetDoubleValue(section, key);
@@ -37,7 +37,7 @@ public:
     
     template<typename type>
     type GetSkinSetting(const char* section, const char* key, bool menu = false) {
-        type value = NULL;
+        type value = 0.0;
         
         if (typeid(type) == typeid(float))
             value = (float)skins_cfg.GetDoubleValue(section, key);

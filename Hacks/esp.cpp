@@ -1,7 +1,7 @@
 #include "../main.h"
-#include "esp.h"
 #include "../Hacks/autowall.h"
-#include "hitmarker.h"
+#include "esp.h"
+
 void DrawSkeleton(C_BaseEntity* pEntity, Color color){
     
 studiohdr_t* pStudioModel = pModelInfo->GetStudioModel( pEntity->GetModel() );
@@ -52,72 +52,6 @@ void DrawHealthbar(int x, int y, int w, int h, int health, Color color)
     
     
 }
-
-/*void cantiaim_indicator(C_BaseEntity* local)
-{
-    if (!vars.visuals.antiaiminfos)
-        return;
-    
-    if (!local)
-        return;
-    
-    // TODO: color pickers
-    static const auto real_color = Color(255, 0, 0, 255);
-    static const auto fake_color = Color(0, 0, 255, 255);
-    static const auto lby_color = Color(0, 255, 0, 255);
-    
-    if (g_input->m_fCameraInThirdPerson)
-    {
-        // TODO: slider
-        constexpr auto distance = 50.f;
-        
-        const auto origin = local->GetVecOrigin();
-        
-        Vector screen1, screen2;
-        if (!g_debugoverlay->ScreenPosition(origin, screen1))
-        {
-            if (!g_debugoverlay->ScreenPosition(math::get_rotated_position(origin, globals.m_real_angle.y, distance), screen2))
-                draw_manager::add_line(screen1.x, screen1.y, screen2.x, screen2.y, real_color);
-            
-            if (!g_debugoverlay->ScreenPosition(math::get_rotated_position(origin, globals.m_fake_angle.y, distance), screen2))
-                draw_manager::add_line(screen1.x, screen1.y, screen2.x, screen2.y, fake_color);
-            
-            if (!g_debugoverlay->ScreenPosition(math::get_rotated_position(origin, globals.m_lowerbodyyaw, distance), screen2))
-                draw_manager::add_line(screen1.x, screen1.y, screen2.x, screen2.y, lby_color);
-        }
-    }
-    else
-    {
-        auto client_viewangles = Vector();
-        auto screen_width = 0, screen_height = 0;
-        
-        pEngine->GetViewAngles(client_viewangles);
-        pEngine->GetScreenSize(screen_width, screen_height);
-        
-        // TODO: slider
-        constexpr auto radius = 80.f;
-        
-        const auto screen_center = Vector2D(screen_width / 2.f, screen_height / 2.f);
-        const auto real_rot = degrees_to_radians(client_viewangles.y - pGlobals->m_real_angle.y - 90);
-        const auto fake_rot = degrees_to_radians(client_viewangles.y - globals.m_fake_angle.y - 90);
-        const auto lby_rot = degrees_to_radians(client_viewangles.y - globals.m_lowerbodyyaw - 90);
-        
-        auto draw_arrow = [&](float rot, Color color) -> void
-        {
-            draw_manager::add_triangle_filled(
-                                              Vector2D(screen_center.x + cosf(rot) * radius, screen_center.y + sinf(rot) * radius),
-                                              Vector2D(screen_center.x + cosf(rot + degrees_to_radians(10)) * (radius - 25.f),
-                                                       screen_center.y + sinf(rot + degrees_to_radians(10)) * (radius - 25.f)),
-                                              Vector2D(screen_center.x + cosf(rot - degrees_to_radians(10)) * (radius - 25.f),
-                                                       screen_center.y + sinf(rot - degrees_to_radians(10)) * (radius - 25.f)),
-                                              color);
-        };
-        
-        draw_arrow(real_rot, real_color);
-        draw_arrow(fake_rot, fake_color);
-        draw_arrow(lby_rot, lby_color);
-    }
-}*/
 
 void NightMode()
 {
