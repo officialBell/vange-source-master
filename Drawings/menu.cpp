@@ -671,6 +671,7 @@ void cMenu::renderMisc(int x, int y) {
     this->renderCombo(x + 300, y + 130, 125, 20, "Off", FakeLag, vars.misc.fakelagtype, &vars.fakelag_opend);
     if(!vars.fakelag_opend)
         this->renderSlider(x + 300, y + 150, 125, "", vars.misc.fakelagfactor, 16, 0);
+    this->renderCheckbox(x + 300, y + 170, "Moonwalk", &vars.misc.moon);
 
 }
 
