@@ -144,6 +144,8 @@ public:
         bool vangeme         = false;   // vange.me clan tag
         bool aimware         = false;   // aimware clan tag ;P
         
+        bool moon            = false;   //teeheee
+        
         bool showrank       = true;     // Show everyboys rank in MM
         bool spammer        = false;    // Chat spammer
         bool noflash        = true;     // Disabled flashbangs

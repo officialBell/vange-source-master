@@ -6,6 +6,8 @@
 #include "../Hacks/clantag.h"
 #include "../Hacks/spammer.h"
 #include "../Hacks/fakewalk.h"
+#include "../Hacks/moonwalk.h"
+
 
 Vector tpangles;
 
@@ -94,6 +96,8 @@ void hacks(CUserCmd* cmd, C_BaseEntity* local, C_BaseCombatWeapon* weapon, Vecto
     DoBhop(cmd, local);
     
     CirlceStrafe(local, cmd, vOldAngles);
+    
+    MoonWalk::CreateMove(cmd);
     
     gamesense();
     
